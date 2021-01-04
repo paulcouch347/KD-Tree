@@ -1,0 +1,19 @@
+Author: Paul Couch
+Date: 3/12/2020
+Running the Program: To run the program, compile kd.cpp using g++ or use the
+	run recipe in the included Makefile. The program expects two command
+	line argument, the number of points in the tree and the number of 
+	probes into the tree. The program can be run with randGen.pl to 
+	populate the points with random positive integers; randGen expects
+	two command line arguments, a seed and an upper limit for the values.
+	If kd is run on its own, the points and probes can be entered through
+	standard input.
+Purpose: This program creates a four dimensional k-d tree, and then searches 
+	through the tree for a given number of probes and outputs the bucket
+	which would hold that probe if it were in the tree.
+Limitations: I think my Lomuto's partitioning algorithim is a little off 
+	because the bucket's ouput by my program were different from those 
+	output by workingKD.
+Outside Help: I used the textbook section on quickselect(p. 321 - 323) to help
+	while I was writing my quickselect algorithim.
+
